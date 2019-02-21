@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">JRynPlanner</string>
+    <string name="login_title">Login</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="register_title">Register</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="hint_phone">Enter your phone</string>
+    <string name="enter_confirmation_code">Enter confirmation code</string>
+    <string name="send_confirmation_code">SEND CONFIRMATION CODE</string>
+    <string name="package_detail_title">Package Detail</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="notes">Additional Notes</string>
+    <string name="package_name">Package Name</string>
+    <string name="price">Price</string>
+    <string name="rating">Rating</string>
+    <string name="date">Date</string>
+    <string name="your_purchases">Your Purchases</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="purchase_detail">Purchase Detail</string>
+</resources>

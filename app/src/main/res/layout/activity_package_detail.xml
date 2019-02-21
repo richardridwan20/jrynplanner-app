@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".PackageDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/packagedetail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:titleTextColor="@android:color/white"
+        android:theme="@style/ToolbarTheme"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            style="@style/title_style"
+            android:layout_marginBottom="30dp"
+            android:text="@string/package_detail_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/package_name_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/package_name" />
+
+            <TextView
+                android:id="@+id/package_detail_name"
+                style="@style/package_price_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="@string/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/package_name_style"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/package_detail_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/package_price_style"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="@string/rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/package_name_style"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/package_detail_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/package_price_style"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:text="@string/date"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/package_name_style"/>
+
+            <TextView
+                android:id="@+id/btn_date"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_date"
+                style="@style/package_style_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:text="@string/notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/package_name_style"/>
+
+            <EditText
+                android:id="@+id/Notes"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:hint="Input your request"
+                android:textColorHint="@android:color/black"
+                style="@style/package_price_style"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reserve_btn"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg_purple"
+            android:textColor="@android:color/white"
+            android:text="reserve"/>
+
+    </LinearLayout>
+
+</LinearLayout>

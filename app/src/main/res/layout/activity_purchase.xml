@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".PurchaseActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/purchase_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:titleTextColor="@android:color/white"
+        android:theme="@style/ToolbarTheme"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/your_purchases"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        style="@style/title_style"/>
+
+    <ListView
+        android:id="@+id/lv_purchase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"/>
+
+</LinearLayout>
